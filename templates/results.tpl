@@ -6,7 +6,6 @@
 {* The Result Table *}
 <table id="result">
 <tr class="header_row">
-<th align="center">&nbsp;</th>
 <th align="center">
 	<a class="{if $clicked == "track"}yellow_white{else}white_yellow{/if}"
 	name="track" onclick="on_header_click(this)" 
@@ -40,14 +39,9 @@
 {* The Result Rows *}
 {foreach from=$result item=row}
 <tr id="table_row">
-<td>
-	<a class="NoColor" href="./results.php?album={$row.album}&artist={$row.artist}&amp;order_by=artist,album,track,title">
-		<img src="{#art_location#}/xsmall/{$row.art_file}" width="50" height="50" alt="NA"/>
-	</a>
-</td>
 <td>{$row.track}</td>
 <td>
-    <a href="details.php?sid={$row.sid}">{$row.title}</a>
+    {$row.title}
 </td>
 <td>
     <a href="results.php?album={$row.album}&amp;order_by=artist,album,track,title">{$row.album}</a>
