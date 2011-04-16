@@ -20,7 +20,7 @@ $and        = isset($_GET['and'])        ? $_GET['and']        : null;
 $wildcard   = isset($_GET['wildcard'])   ? $_GET['wildcard']   : null;
 $pid        = isset($_GET['pid'])        ? $_GET['pid']        : null;
 $order_by   = isset($_GET['order_by'])   ? $_GET['order_by']   : $default_order;
-$back       = isset( $_SESSION['SEARCH_PAGE'] ) ? $_SESSION['SEARCH_PAGE'] : "./query.php";
+$back       = isset( $_SESSION['SEARCH_PAGE'] ) ? $_SESSION['SEARCH_PAGE'] : "./index.php";
 //infer sort col from order_by
 $strs = explode(' ', $order_by);
 $clicked  = $strs[0];
