@@ -1,7 +1,7 @@
 <?php
 
-define('SMARTY_DIR', '<SMARTY PATH>');
-define('PROJECT_DIR', '<PROJECT PATH>'); 
+define('SMARTY_DIR', 'C:\\<SMARTY EXAMPLE PATH>\\');
+define('PROJECT_DIR', 'C:\\<PROJECT EXAMPLE PATH>\\'); 
 
 $smarty_compile_check = true;
 $smarty_debugging = true;
