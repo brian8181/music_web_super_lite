@@ -1,4 +1,4 @@
-{config_load file=music.conf}
+{config_load file="music.conf"}
 {if isset(#enable_advanced#) && #enable_advanced# == true}
 	 <li>
        <a class="Nav" href="adv_query.php">Advanced</a>
