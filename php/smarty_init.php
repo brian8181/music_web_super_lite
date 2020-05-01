@@ -1,6 +1,11 @@
 <?php
 require_once("./config/config.php");
+
+//BKP 
+// Deprecated: Methods with the same name as their class will not be constructors in a future version of PHP; Smarty has a deprecated constructor
 require_once(SMARTY_DIR . 'Smarty.class.php');
+
+ 
 
 $smarty = new Smarty;
 // setup Smarty    
